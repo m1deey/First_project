@@ -1,33 +1,47 @@
-# Titanic - Machine Learning from Disaster 🚢
-
-This is my first complete data science project where I built an end-to-end machine learning pipeline to predict passenger survival on the Titanic. I walked through the entire workflow: reading the data, cleaning it, exploring it visually, handling overfitting, and deploying an ensemble model to get the best result.
-
-## 🛠️ The Workflow
-
-### 1. Data Loading & Cleaning
-* Read the raw Titanic dataset using `pandas`.
-* Handled missing values (imputed missing ages and filled gaps in essential columns).
-* Converted categorical text columns (like `Sex` and `Embarked`) into numerical values so the machine learning algorithms could process them.
-
-### 2. Data Visualization
-* Created visual plots to analyze the survival rates across different passenger classes (`Pclass`), age brackets, and genders.
-* Used visual distributions to find core hidden patterns before feeding the data to any models.
-
-### 3. Model Building & Hyperparameter Tuning
-* **Baseline Tree:** Built an initial Decision Tree that scored 79.89% but heavily overfitted the data by creating too many complex, chaotic branches.
-* **Tuned Tree:** Optimized the Single Decision Tree by limiting its depth (`max_depth=3`), forcing it to focus only on big, overarching survival patterns. This boosted accuracy to 80.45%.
-* **Linear Classification:** Tested a Logistic Regression model to draw clean mathematical boundaries, hitting a solid 81.01% accuracy.
-* **Ensemble Learning (The Champion):** Scaled up to a Random Forest classifier. By adjusting its hyperparameters to `n_estimators=100` and `max_depth=10`, the model successfully utilized the "wisdom of the crowd" to handle deeper features without overfitting.
-
-## 🏆 Final Model Leaderboard
-
-| Model Name | Test Accuracy | Status |
-| :--- | :---: | :--- |
-| Original Decision Tree | 79.89% | Overfitted Baseline |
-| Tuned Decision Tree (Depth 3) | 80.45% | Optimized Tree |
-| Logistic Regression | 81.01% | Strong Linear Baseline |
-| **Random Forest (Depth 10)** | **83.24%** | **🏆 Chosen Champion Model** |
-
-## 🔑 Key Takeaway
-Going from a single overfitted tree to a tuned Random Forest ensemble completely changed the game. Restricting tree parameters while letting 100 diverse trees vote on predictions allowed the model to comfortably clear the 83% accuracy threshold on unseen test data.
+#First ML Project – Titanic Survival Prediction
+What this is
+This is my first machine learning project.
+I used the Titanic dataset to try and predict whether a passenger survived or not based on things like age, gender, class, and ticket fare.
+I built this project while learning the basics of machine learning step by step.
+#What I did in this project
+Cleaned the data and handled missing values
+Converted text data into numbers so the model can understand it
+Explored the dataset to see patterns (like who survived more)
+Trained a Decision Tree model
+Made predictions on test data
+#What the model does
+The model tries to guess:
+0 → Did not survive
+1 → Survived
+It learns patterns from the data and uses them to make predictions.
+#Results
+The model got around ~80% accuracy depending on how the data is split.
+On some test examples, it correctly predicted about 8 out of 10 cases.
+#What I used
+Python
+Pandas
+NumPy
+Matplotlib
+Scikit-learn
+Google Colab
+#What I learned from this
+This project helped me understand:
+How machine learning actually works step by step
+How to clean real-world messy data
+How to train and test a model
+How to think in terms of features and predictions
+#What I want to improve next
+I know this is just a first step. Next I want to:
+Try different models (Random Forest, Logistic Regression, etc.)
+Improve accuracy
+Do better visualizations
+Add proper evaluation (confusion matrix, precision, recall)
+Make the project more structured and clean
+#How to run it
+git clone https://github.com/m1deey/First_project
+cd First_project
+pip install -r requirements.txt
+Or just open it in Google Colab.
+#Final note
+This is my first ML project, so it’s not perfect — but it helped me understand the basics and gave me a starting point to improve.
 
