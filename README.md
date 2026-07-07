@@ -1,33 +1,73 @@
-# 📊 First ML Project – Titanic Survival Prediction
+# 🚢 Titanic Survival Prediction (My First ML Project)
 
-## What this is
-This is my first machine learning project.
+## About this project
+This is my first machine learning project where I tried to predict whether a passenger survived the Titanic disaster or not.
 
-I used the Titanic dataset to try and predict whether a passenger survived or not based on things like age, gender, class, and ticket fare.
-
-I built this project while learning the basics of machine learning step by step.
+I built this while learning how machine learning works step by step.
 
 ---
 
-## What I did in this project
-- Cleaned the data and handled missing values  
-- Converted text data into numbers so the model can understand it  
-- Explored the dataset to see patterns (like who survived more)  
-- Trained a Decision Tree model  
-- Made predictions on test data  
+## What I did
+- Cleaned and prepared the data  
+- Filled missing values  
+- Converted categorical data into numbers  
+- Explored patterns in the dataset  
+- Trained multiple ML models  
+- Compared model performance  
 
 ---
 
-## What the model does
-The model tries to guess:
-
-- 0 → Did not survive  
-- 1 → Survived  
-
-It learns patterns from the data and uses them to make predictions.
+## Models used
+- Logistic Regression  
+- Decision Tree  
+- Random Forest  
 
 ---
 
 ## Results
-The model got around **~80% accuracy** depending on
+Best model accuracy: **~80% (varies by split)**
+
+I also evaluated the model using:
+- Confusion Matrix  
+- Classification Report  
+
+---
+
+## Key insights
+- Women had higher survival rates than men  
+- First-class passengers survived more often  
+- Fare and class were important features  
+
+---
+
+## Visualizations
+This project includes:
+- Survival distribution plots  
+- Gender survival comparison  
+- Class survival comparison  
+- Confusion matrix  
+
+---
+
+## What I learned
+- How a full ML pipeline works  
+- How to clean real-world data  
+- How to train and compare models  
+- How to evaluate predictions properly  
+
+---
+
+## Next improvements
+- Feature engineering  
+- Hyperparameter tuning  
+- Cross-validation  
+- Deployment using Streamlit  
+
+---
+
+## How to run
+```bash
+git clone https://github.com/m1deey/First_project
+cd First_project
+pip install -r requirements.txt
 
